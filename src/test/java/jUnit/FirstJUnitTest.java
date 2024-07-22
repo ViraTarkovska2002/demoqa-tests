@@ -2,9 +2,7 @@ package jUnit;
 
 import org.junit.jupiter.api.*;
 
-import java.lang.module.Configuration;
-
-public class FirstJUnitFirst {
+public class FirstJUnitTest {
     @BeforeAll
     static void beforeAll() {
      //   Configuration.browser = Firefox;
