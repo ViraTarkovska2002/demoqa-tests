@@ -1,11 +1,16 @@
 package jUnit;
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
 
+import static com.codeborne.selenide.Browsers.FIREFOX;
+
 public class FirstJUnitTest {
+
+    // такая конструкция в jUnit называется жизненным циклом теста:
     @BeforeAll
     static void beforeAll() {
-     //   Configuration.browser = Firefox;
+     Configuration.browser = FIREFOX;
         System.out.println("Это метод @BeforeAll");
     }
 
